@@ -10,6 +10,7 @@ export class ClimaComponent implements OnInit {
   @Input() latitude:String;
   @Input() longitude:String;
   temperatura:String;
+  localizacao:String;
   key:String = "6e24edd54ad31de7892c5aaaaaee8973";
   url:String = "http://api.openweathermap.org/data/2.5/weather";
   constructor(private http:HttpClient) { }
@@ -23,8 +24,8 @@ export class ClimaComponent implements OnInit {
     this.url = `${this.url}?lat=${this.latitude}&lon=${this.longitude}&units=metric&APIKEY=${this.key}`;
     var data = await this.http.get(`${this.url}`).toPromise();
     this.temperatura = data.main.temp;
+    this.localizacao = data.name;
     console.log(data)
-
   }
 
 }

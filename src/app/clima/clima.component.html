@@ -2,7 +2,9 @@
 
 Latitude: {{latitude}} <br>
 Longitude: {{longitude}} <br>
-
+<br>
 <button type="button" name="button" (click)="getPositionData()">MINHA POSIÇÃO</button> <br>
 
-Minha temperatura é: {{temperatura}}
+<h1>Minha temperatura é: {{temperatura?temperatura + " ºC":"Não há dados!"}}</h1>
+<br>
+<h1>Minha localização é: {{localizacao?localizacao:"Não há dados!"}}</h1>
