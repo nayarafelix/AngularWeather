@@ -1,5 +1,8 @@
 # SegundaAula
 
+App de consulta de temperatura por coordenada desenvolvido na aula de Angular da faculdade FIAP
+Curso: Sistemas para internet.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.3.
 
 ## Development server
